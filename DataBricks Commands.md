@@ -28,4 +28,8 @@ Append, Complete, Update
 ### A DELTA LIVE TABLE pipelines can be scheduled to run in two different modes, what are these two different modes?
 Triggered, Continuous
 
+### Which of the following type of tasks cannot setup through a job?
+Databricks SQL Dashboard refresh
 
+### Which of the following is true, when building a Databricks SQL dashboard?
+More than one visualization can be developed using a single query result.
