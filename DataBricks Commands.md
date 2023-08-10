@@ -32,4 +32,12 @@ Triggered, Continuous
 Databricks SQL Dashboard refresh
 
 ### Which of the following is true, when building a Databricks SQL dashboard?
-More than one visualization can be developed using a single query result.
+More than one visualization can be developed using a single query result. In the query editor pane + Add visualization tab can be used for many visualizations for a single query result.
+
+### How do you upgrade an existing workspace managed table to a unity catalog table?
+**CREATE TABLE** catalog_name.schema_name.table_name **AS SELECT * FROM** hive_metastore.old_schema.old_table
+1. Basically, we are moving the data from an internal hive metastore to a metastore and catalog that is registered in the Unity Catalog note: if it is a managed table the data is copied to a different storage account, for a large tables this can take a lot of time.  For an external table the process is different.
+
+Managed table: Upgrade a managed to Unity Catalog
+
+External table:  Upgrade an external table to Unity Catalog
