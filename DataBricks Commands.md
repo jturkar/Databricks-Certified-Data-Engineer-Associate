@@ -9,9 +9,10 @@ Ans. DROP DATABASE customers **CASCADE**
 
 ### Q4. Define an external SQL table by connecting to a local instance of an SQLite database using JDBC
 
-Ans. 1. CREATE TABLE user_jdbc
-      2. USING org.apache.spark.sql.jdbc
-      3. OPTIONS (
-      4.         url = "jdbc:sqlite:/sqmple_db",
-                 dbtable = "users"
-          )
+1. CREATE TABLE user_jdbc
+2. USING org.apache.spark.sql.jdbc
+3. OPTIONS (
+4.        url = "jdbc:sqlite:/sqmple_db",
+5.           dbtable = "users"
+6.       )
+     
